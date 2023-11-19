@@ -35,31 +35,44 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(321, 32);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(383, 50);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(94, 15);
+            label1.Size = new Size(316, 38);
             label1.TabIndex = 0;
             label1.Text = "POINT OF SALES";
+            label1.Click += label1_Click;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(687, 24);
+            btnBack.BackColor = Color.SteelBlue;
+            btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.ForeColor = SystemColors.Control;
+            btnBack.Location = new Point(491, 651);
+            btnBack.Margin = new Padding(4, 5, 4, 5);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(151, 67);
             btnBack.TabIndex = 1;
             btnBack.Text = "BACK";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // PointOfSalesForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1143, 750);
             Controls.Add(btnBack);
             Controls.Add(label1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "PointOfSalesForm";
             Text = "PointOfSalesForm";
+            Load += PointOfSalesForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -23,5 +23,15 @@ namespace lab
             this.openMainForm.Show();
             this.Hide();
         }
+
+        private void PointOfSalesForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

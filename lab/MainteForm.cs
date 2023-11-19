@@ -435,5 +435,30 @@ namespace lab
                 connection.Close();
             }
         }
+
+        private void tabUsers_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabNewITem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSupplierAddress_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
             lblLogIn = new Label();
             txtUserName = new TextBox();
             txtPassword = new TextBox();
@@ -40,70 +41,98 @@
             // lblLogIn
             // 
             lblLogIn.AutoSize = true;
-            lblLogIn.Location = new Point(363, 30);
+            lblLogIn.BackColor = Color.Transparent;
+            lblLogIn.Font = new Font("Verdana", 26F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogIn.ForeColor = Color.WhiteSmoke;
+            lblLogIn.Location = new Point(426, 82);
+            lblLogIn.Margin = new Padding(4, 0, 4, 0);
             lblLogIn.Name = "lblLogIn";
-            lblLogIn.Size = new Size(42, 15);
+            lblLogIn.Size = new Size(218, 62);
             lblLogIn.TabIndex = 0;
             lblLogIn.Text = "LOGIN";
+            lblLogIn.Click += lblLogIn_Click;
             // 
             // txtUserName
             // 
-            txtUserName.Location = new Point(307, 60);
+            txtUserName.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUserName.Location = new Point(330, 258);
+            txtUserName.Margin = new Padding(4, 5, 4, 5);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(167, 23);
+            txtUserName.Size = new Size(443, 29);
             txtUserName.TabIndex = 1;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(307, 106);
+            txtPassword.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Location = new Point(330, 370);
+            txtPassword.Margin = new Padding(4, 5, 4, 5);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(167, 23);
+            txtPassword.Size = new Size(443, 29);
             txtPassword.TabIndex = 2;
             // 
             // lblUserName
             // 
             lblUserName.AutoSize = true;
-            lblUserName.Location = new Point(227, 63);
+            lblUserName.BackColor = Color.Transparent;
+            lblUserName.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUserName.ForeColor = Color.White;
+            lblUserName.Location = new Point(330, 231);
+            lblUserName.Margin = new Padding(4, 0, 4, 0);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(71, 15);
+            lblUserName.Size = new Size(129, 22);
             lblUserName.TabIndex = 3;
             lblUserName.Text = "USERNAME:";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(227, 109);
+            lblPassword.BackColor = Color.Transparent;
+            lblPassword.Font = new Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPassword.ForeColor = Color.White;
+            lblPassword.Location = new Point(330, 343);
+            lblPassword.Margin = new Padding(4, 0, 4, 0);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(74, 15);
+            lblPassword.Size = new Size(140, 22);
             lblPassword.TabIndex = 4;
             lblPassword.Text = "PASSWORD: ";
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(345, 146);
+            btnSubmit.BackColor = Color.CornflowerBlue;
+            btnSubmit.FlatStyle = FlatStyle.Popup;
+            btnSubmit.Font = new Font("Verdana", 7F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSubmit.ForeColor = Color.White;
+            btnSubmit.Location = new Point(666, 535);
+            btnSubmit.Margin = new Padding(4, 5, 4, 5);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(75, 23);
+            btnSubmit.RightToLeft = RightToLeft.No;
+            btnSubmit.Size = new Size(107, 38);
             btnSubmit.TabIndex = 5;
             btnSubmit.Text = "SUBMIT";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
             // 
             // chbShowPass
             // 
             chbShowPass.AutoSize = true;
-            chbShowPass.Location = new Point(480, 108);
+            chbShowPass.BackColor = Color.Transparent;
+            chbShowPass.ForeColor = SystemColors.HighlightText;
+            chbShowPass.Location = new Point(330, 418);
+            chbShowPass.Margin = new Padding(4, 5, 4, 5);
             chbShowPass.Name = "chbShowPass";
-            chbShowPass.Size = new Size(108, 19);
+            chbShowPass.Size = new Size(162, 29);
             chbShowPass.TabIndex = 6;
             chbShowPass.Text = "Show Password";
-            chbShowPass.UseVisualStyleBackColor = true;
+            chbShowPass.UseVisualStyleBackColor = false;
             chbShowPass.CheckedChanged += chbShowPass_CheckedChanged;
             // 
             // LogInForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.Control;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1071, 750);
             Controls.Add(chbShowPass);
             Controls.Add(btnSubmit);
             Controls.Add(lblPassword);
@@ -111,6 +140,7 @@
             Controls.Add(txtPassword);
             Controls.Add(txtUserName);
             Controls.Add(lblLogIn);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "LogInForm";
             Text = "Log In Form";
             ResumeLayout(false);

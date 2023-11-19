@@ -58,5 +58,10 @@ namespace lab
         {
             txtPassword.UseSystemPasswordChar = !chbShowPass.Checked;
         }
+
+        private void lblLogIn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
